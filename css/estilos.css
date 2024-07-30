@@ -1,0 +1,85 @@
+/*
+  Variables globales del proyecto
+*/
+/**
+*Fin variables globales del proyecto
+*/
+* {
+  font-family: "Segoe UI";
+}
+
+body {
+  margin: 0;
+}
+
+#onHeader {
+  height: 10vh;
+}
+#onHeader > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50%;
+}
+#onHeader > div:first-child {
+  background: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 15px;
+}
+#onHeader > div:first-child img {
+  height: 50%;
+}
+#onHeader > div:last-child {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#onHeader > div:last-child div {
+  width: 48%;
+  height: 100%;
+}
+#onHeader > div:last-child div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#onHeader > div:last-child div:first-child svg {
+  height: 80%;
+}
+#onHeader > div:last-child div:first-child span {
+  margin: 0 7px;
+  font-size: 0.75em;
+}
+#onHeader > div:last-child div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#onHeader > div:last-child div:last-child button {
+  background-color: #005499;
+  border: none;
+  border-radius: 15px;
+  padding: 3px 20px;
+  color: white;
+  font-weight: bold;
+}
+#onHeader > div:last-child div:last-child span {
+  height: 80%;
+  margin-left: 15px;
+}
