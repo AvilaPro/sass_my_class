@@ -1,0 +1,12 @@
+.selected-status{
+  background: $selected;
+}
+.confirm-status{
+  background-color: $confirm;
+}
+.error-status{
+  background-color: $error;
+}
+.warning-status{
+  background-color: $warning;
+}

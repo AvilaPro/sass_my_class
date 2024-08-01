@@ -1,0 +1,12 @@
+/*Sombras*/
+.bxShadow{
+  @if $shadowSize == large{
+    box-shadow: 0px #{$shadowPxNormal + 2} 10px 2px rgb(241, 235, 235);
+  } @else if $shadowSize == small{
+    box-shadow: 0px #{$shadowPxNormal - 2} 3px 2px lightgray;
+  } @else if $shadowSize == x-small{
+    box-shadow: 0px #{$shadowPxNormal - 2} 3px 2px lightgray;
+  } @else {
+    box-shadow: 0px #{$shadowPxNormal} 3px 2px lightgray;
+  }
+}

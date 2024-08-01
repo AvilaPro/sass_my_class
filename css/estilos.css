@@ -13,7 +13,7 @@ body {
 }
 
 #onHeader {
-  height: 10vh;
+  height: 12vh;
 }
 #onHeader > div {
   display: -webkit-box;

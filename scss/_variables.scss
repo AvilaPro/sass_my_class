@@ -1,0 +1,23 @@
+/*Tamaños segun caso*/
+//Tamaño de fuente normal
+$fontSizeStandard: 16px;
+//Tamaño de sombra
+$shadowSize: large;
+$shadowPxNormal: 5px; 
+
+/*Colores segun casos*/
+/*Selected*/
+$selected: #CED5DA;
+$selected-hover: #dce5ed;
+
+/*Confirm*/
+$confirm: lightgreen;
+$confirm-hover: #c5f3ce;
+
+/*Error*/
+$error: lightcoral;
+$error-hover: rgb(254, 190, 190);
+
+/*Warning*/
+$warning: rgb(251, 251, 150);
+$warning-hover: rgb(252, 252, 207);  

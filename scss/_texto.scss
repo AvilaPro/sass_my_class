@@ -1,0 +1,20 @@
+/*Definir tamaños de las letras dependiendo de los distintos casos.*/
+.txt{
+  //normal
+  font-size: $fontSizeStandard;
+  &-title{
+    font-size: $fontSizeStandard * 2;
+  }
+  &-subtitle{
+    font-size: $fontSizeStandard * 1.5;
+  }
+  &-p{
+    font-size: $fontSizeStandard * 1.2;
+  }
+  &-quote{
+    font-size: $fontSizeStandard * 0.8;
+  }
+  &-input-info{
+    font-size: $fontSizeStandard * 0.5;
+  }
+}

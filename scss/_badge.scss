@@ -1,0 +1,26 @@
+/*Suponiendo que estamos en la metodologia BEM*/
+.badge{
+  padding: 5px 14px;
+  border-radius: 18px;
+  font-weight: bold;
+  &:hover{
+    background-color: $selected-hover;
+    cursor: pointer;
+  }
+  &--confirm{
+    @extend .badge;
+    background: $confirm;
+    &:hover{
+      background: $confirm-hover;
+      cursor: pointer;
+    }
+  }
+  &--error{
+    @extend .badge;
+    background: $error;
+    &:hover{
+      background: $error-hover;
+      cursor: pointer;
+    }
+  }
+}
