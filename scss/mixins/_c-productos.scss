@@ -1,0 +1,42 @@
+@mixin cProducts($sizeImg, $urlListImgs, $nroImgs, $categorizer: false, $save: false, $price: false){
+  @for $j from 1 through $nroImgs{
+    & .cProducts:nth-child(#{$j}){
+      >.c-p-img{
+        background-image: url(nth($urlListImgs, $j));
+      }
+    }
+  }
+  & .c-p-img{
+    max-width: $sizeImg;
+    aspect-ratio: 1/1;
+    background-size: contain;
+    border-radius: 8px; 
+  }
+  @if $categorizer{
+    .c-p-categorizer{
+      display: block;
+    }
+  }@else{
+    .c-p-categorizer{
+      display: none;
+    }
+  }
+  @if $save{
+    .c-p-save{
+      display: block;
+    }
+  }@else{
+    .c-p-save{
+      display: none;
+    }
+  }
+  @if $price{
+    .c-p-price{
+      display: block;
+    }
+  }@else{
+    .c-p-price{
+      display: none;
+    }
+  }
+}

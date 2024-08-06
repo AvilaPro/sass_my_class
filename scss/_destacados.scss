@@ -1,0 +1,20 @@
+#destacados{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: $sectionsPadding;
+  >div{
+    min-width: map-get($miniaturas-anchos, "destacados", "desktop");
+    aspect-ratio: 1/1;
+    margin: 0.7vw;
+    border-radius: 12px;
+    background-size: contain;
+    @for $i from 1 through 6{
+      &:nth-child(#{$i}){
+        background-image: url(nth($destacados, $i));
+      }
+    }
+  }
+}

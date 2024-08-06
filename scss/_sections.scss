@@ -1,0 +1,14 @@
+#top10{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: $sectionsPadding;
+  #carousel-top10{
+    display: flex;
+    justify-content: space-between;
+    @include cProducts(map-get($miniaturas-anchos, "sections", "desktop"), $top10UrlImgs, 6);
+  }
+  .cProducts{
+    width: map-get($miniaturas-anchos, "sections", "desktop");
+  }
+}

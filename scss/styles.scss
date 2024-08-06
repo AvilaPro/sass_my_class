@@ -1,13 +1,21 @@
 /*Globales*/
 @import "variables";
 
+/*Assets*/
+@import "assets/imgsLists";
+
 /*Status y condiciones*/
 @import "status";
 @import "texto";
 @import "blockModifier";
 
+/*Mixins*/
+@import "mixins";
+
 /*Secciones semanticas de la pagina*/
 @import "header";
+@import "destacados";
+@import "sections";
 
 /*Componentes web*/
 @import "badge";

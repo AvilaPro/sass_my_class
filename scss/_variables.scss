@@ -20,4 +20,23 @@ $error-hover: rgb(254, 190, 190);
 
 /*Warning*/
 $warning: rgb(251, 251, 150);
-$warning-hover: rgb(252, 252, 207);  
+$warning-hover: rgb(252, 252, 207); 
+
+/*Tamanos de containers*/
+/*Secciones de la pagina*/
+$sectionsPadding: 3vw;
+
+/*Maps*/
+/*Tamanos de las miniaturas de los juegos*/
+$miniaturas-anchos: (
+  "destacados": (
+    "movil": 40vw,
+    "tablet": 30vw,
+    "desktop": 20vw
+  ),
+  "sections": (
+    "movil": 40vw,
+    "tablet": 30vw,
+    "desktop": 14vw
+  )
+)
