@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /*Globales*/
+/*Colores*/
+/*Color azul principal*/
 /*Tamaños segun caso*/
 /*Colores segun casos*/
 /*Selected*/
@@ -60,6 +62,7 @@ header {
   height: 12vh;
   position: sticky;
   top: 0;
+  z-index: 100;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 2fr;
@@ -93,6 +96,54 @@ header > div:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#banner {
+  height: 85vh;
+  width: 100%;
+  margin-top: 10vh;
+  -webkit-box-shadow: 0 9px 8px 8px #dbd7d7;
+          box-shadow: 0 9px 8px 8px #dbd7d7;
+}
+#banner > div:first-child {
+  height: 70%;
+  background-image: url("https://image.api.playstation.com/pr/bam-art/180/850/1c6f9e1f-c0db-4229-9cb1-12f2dee4c3f0.png?w=1920&thumb=false");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#banner > div:first-child img {
+  height: 80%;
+  position: relative;
+  left: 23vw;
+  top: 5vh;
+}
+#banner > div:last-child {
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 5vw;
+}
+#banner > div:last-child > div:first-child p:first-child {
+  font-size: 4em;
+}
+#banner > div:last-child > div:first-child p:last-child {
+  font-size: 0.9em;
+}
+#banner > div:last-child > div:last-child {
+  padding-top: 5vh;
+}
+#banner > div:last-child > div:last-child button {
+  padding: 8px 16px;
+  background-color: #005499;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-weight: bold;
 }
 
 #destacados {
@@ -219,3 +270,10 @@ header > div:last-child {
   background: rgb(254, 190, 190);
   cursor: pointer;
 }
+
+/*Ensayo para probar error*/
+#tester {
+  color: red;
+}
+
+/*Parcial de ejemplo*/

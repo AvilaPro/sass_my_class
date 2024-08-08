@@ -1,0 +1,10 @@
+@function font-size($standard-size, $multiplier: 1) {
+  @if ($multiplier > 3){
+    @warn "cuidado el  ultiplicador no debe ser mayor que 3";
+  }
+  @return $standard-size * $multiplier;
+} 
+
+@function buscarColor($map, $name){
+  @return map-get($map, $name);
+}

@@ -24,3 +24,14 @@
     }
   }
 }
+
+
+/*Ensayo para probar error*/
+#tester{
+  $verde: "rojo";
+  @if map-has-key($colores , $verde ){
+    color: buscarColor($colores, $verde);
+  }@else{
+    @error "color buscado invalido, debe decir azul o rojo."
+  }
+}

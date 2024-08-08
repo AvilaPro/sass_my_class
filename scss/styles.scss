@@ -1,4 +1,5 @@
 /*Globales*/
+@import "functions";
 @import "variables";
 
 /*Assets*/
@@ -14,10 +15,14 @@
 
 /*Secciones semanticas de la pagina*/
 @import "header";
+@import "banner";
 @import "destacados";
 @import "sections";
 
 /*Componentes web*/
 @import "badge";
+
+/*Parcial de ejemplo*/
+@import "testsass";
 
 

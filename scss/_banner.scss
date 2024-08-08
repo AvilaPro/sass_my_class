@@ -1,0 +1,54 @@
+#banner{
+  height: 85vh;
+  width: 100%;
+  margin-top: 10vh;
+  //#E9E9E9
+  @debug change-color($color: $color-principal, $hue: 0, $saturation: 5%, $lightness: 85%, $alpha: 1.0);
+  box-shadow: 0 9px 8px 8px change-color($color: $color-principal, $hue: 0, $saturation: 5%, $lightness: 85%, $alpha: 1.0);
+  & > div{
+    &:first-child{
+      height: 70%;
+      background-image: url('https://image.api.playstation.com/pr/bam-art/180/850/1c6f9e1f-c0db-4229-9cb1-12f2dee4c3f0.png?w=1920&thumb=false');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      img{
+        height: 80%;
+        position: relative;
+        left: 23vw;
+        top: 5vh;
+      }
+    }
+    &:last-child{
+      height: 30%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 5vw;
+      & > div{
+        &:first-child{
+          & p{
+            &:first-child{
+              font-size: font-size(1em, 4);
+            }
+            &:last-child{
+              font-size: font-size(1em, 0.9);
+            }
+          }
+        }
+        &:last-child{
+          padding: {
+            top: 5vh
+          };
+          button{
+            padding: 8px 16px;
+            background-color: $color-principal;
+            border-radius: 20px;
+            border: none;
+            color: white;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

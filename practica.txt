@@ -1,0 +1,3 @@
+Crear un parcial para las funciones del codigo.
+Agregar el parcial al archivo principal.
+Crear una funcion en sass para que segun un parametro nos devuelva un valor de tamano de text necesario
